@@ -46,6 +46,13 @@ export default function RootLayout() {
             headerRight: () => <ThemeToggle />,
           }}
         />
+        <Stack.Screen
+          name='modal'
+          options={{
+            presentation: 'modal',
+            title: 'Magic Awaits',
+          }}
+        />
       </Stack>
       <PortalHost />
     </ThemeProvider>
